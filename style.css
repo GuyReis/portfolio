@@ -1,0 +1,90 @@
+@font-face {
+    font-family: 'Product Sans';
+    font-style: normal;
+    font-weight: 400;
+    src: local('Open Sans'), local('OpenSans'), url(https://fonts.gstatic.com/s/productsans/v5/HYvgU2fE2nRJvZ5JFAumwegdm0LZdjqr5-oayXSOefg.woff2) format('woff2');
+  }
+
+body{
+    font-family: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
+    background-color:  #303841;
+    text-shadow: 5px #171717 ;
+    background-image: url(https://resi.ze-robot.com/dl/ga/gas-station-2-1920%C3%971080.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    line-height: 15px;
+    
+}
+.container{
+    background-color: hsla(252, 15%, 87%, 0.432);
+    margin: auto;
+    border-radius: 15px;
+    border-style: solid;
+    border-color: #594082;
+    box-shadow: 5px 5px 10px black;
+    backdrop-filter: blur(10px);
+    width: fit-content;   
+    margin-top: 250px;
+    padding: 15px;
+       
+}
+.fotoperfil{
+     
+    border-radius: 460px;
+    scale: fill;
+    offset: 0px 4px;
+    max-height: 130px;
+    box-shadow: 0px 0px 15px #594082;
+    backdrop-filter: blur(10px);
+    margin: 15px;
+       
+}
+.perfil{
+    display: flex;
+    align-items: center;
+    flex-direction: row;  
+}
+.socialmedia{
+    max-height: 35px;
+    margin-right: 5px  ;
+    -webkit-transition: all 0.7s ease;
+    transition: all 0.7s ease;
+    
+   }
+ 
+ 
+ .container h2{
+     font-weight: lighter;
+     font-size: 30px;
+
+ }
+  .github:hover{
+    -webkit-transform: scale(1.1);
+    transform: scale(1.2);
+    
+}
+ .socialmedia:hover{
+    -webkit-transform: scale(1.1);
+    transform: scale(1.2);
+    }
+    .container h1{
+        font-family: "Product Sans";
+        font-size: 45px;
+    }
+    .linguas{
+        max-height: 35px;
+        margin: auto;
+        width: fit-content;
+        padding: 5px;          
+    }
+    .linguascon{
+    margin: auto;
+    border-radius: 7px; 
+    backdrop-filter: blur(10px);
+    background-color: #1717174b;
+    width: fit-content;   
+    }
+    .linguasicons{
+        display: flex;
+        align-items: center;
+    }
