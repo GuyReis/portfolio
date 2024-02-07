@@ -1,37 +1,41 @@
 <!DOCTYPE html>
-<html lang="en">
-    <link rel="stylesheet" href="style.css">
+<html lang="pt-br">
 <head>
+    <link rel="stylesheet" href="./styles/style.css">
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Portfólio</title>
+    <title>Portfolio</title>
 </head>
 <body>
-    <div class="linguascon">    
-    <div class="container">
-        <header class="perfil">           
-            <img  class = "fotoperfil" src = "https://avatars.githubusercontent.com/u/90624412?v=4.png" alt="">
-            <div>
-                <h1>
-                    Nicholas Reis
-                </h1>
-                <h2>
-                    Símio
-                </h2><div>                    
-                    <a href="https://github.com/GuyReis"><img class= "socialmedia" src="https://cdn-icons-png.flaticon.com/128/733/733609.png"" alt=""></a>
-                    <a href="https://www.instagram.com/n.reis0/"><img class ="socialmedia" src="https://cdn-icons-png.flaticon.com/128/747/747393.png" alt=""></a>
-                    <a href="https://www.linkedin.com/in/nicholas-reis-727672214/"><img class="socialmedia" src="https://cdn-icons-png.flaticon.com/128/1384/1384088.png" alt=""></a>
+    <header class="cabecalho">
+        <nav class="cabecalho__menu">
+            <a class="cabecalho__menu__link" href="index.html">Home</a>
+            <a class="cabecalho__menu__link" href="about.html">Sobre mim</a>
+            <a class="cabecalho__menu__link" href="projects.html">Projetos</a>
+        </nav>
+    </header>
+        <main class="apresentacao">
+            <section class="apresentacao__conteudo">
+                <h1 class="apresentacao__conteudo__titulo">Eleve seu negócio digital a outro nível com <strong class="destaque-titulo">um Front-end de qualidade!</strong></h1>
+                <p class="apresentacao__conteudo__texto">Olá! Me chamo Nicholas Reis, desenvolvedor Front-end com especialidade em React, HTML e CSS. Ajudo pequenos negócios e designers a colocarem em prática boas ideias. Vamos conversar?</p>
+                <div class="apresentacao__links">
+                    <h2 class="apresentacao__links__subtitulo">Minhas Redes:</h2>
+                    <a class="apresentacao__links__navegacao" href="https://github.com/GuyReis" target="_blank">
+                        Github<img class="apresentacao__links__redes" src="./assets/github.png" alt="github"></a>
+                    <a class="apresentacao__links__navegacao" href="https://www.linkedin.com/in/nicholas-reis-727672214/" target="_blank">
+                        Linkedin<img class="apresentacao__links__redes" src="./assets/linkedin.png" alt="linkedin"></a>
+                    <a class="apresentacao__links__navegacao" href="https://www.instagram.com/guyreiis/" target="_blank">Instagram<img class="apresentacao__links__redes" src="./assets/instagram.png" alt="instagram"></a>                        
                 </div>
-                </div>
-            </header>
-            
-        </div><div class="linguasicons">            
-            <img class="linguas"  src="https://raw.githubusercontent.com/devicons/devicon/master/icons/javascript/javascript-plain.svg" alt="">
-            <img class="linguas" src="https://raw.githubusercontent.com/devicons/devicon/master/icons/css3/css3-original.svg" alt="">
-            <img class="linguas" src="https://raw.githubusercontent.com/devicons/devicon/master/icons/html5/html5-original.svg" alt="">    
-        </div>
-        </div>
+                
+            </section>
+            <img class="foto-perfil" src="./assets/perfil.jpg" alt="foto de perfil">
+    </main>
+    <footer>
+        <p class="rodape">Desenvolvido por Nicholas.©</p>
+    </footer>
+    
+
+
 </body>
-<script src="script.js"></script>
 </html>
