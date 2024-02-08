@@ -1,90 +1,142 @@
-@font-face {
-    font-family: 'Product Sans';
-    font-style: normal;
-    font-weight: 400;
-    src: local('Open Sans'), local('OpenSans'), url(https://fonts.gstatic.com/s/productsans/v5/HYvgU2fE2nRJvZ5JFAumwegdm0LZdjqr5-oayXSOefg.woff2) format('woff2');
-  }
+@import url('https://fonts.cdnfonts.com/css/product-sans');
 
+:root{
+    --cor--primaria: #191919;
+    --cor--secundaria: #f6f6f6;
+    --cor--terciaria:#6A36CF;
+    --cor--hover:#393939;
+    --cor--texto:#000000;
+    --fonte--principal:'Product Sans', sans-serif;
+}
+*{
+    margin: 0;
+    padding: 0;
+}
 body{
-    font-family: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
-    background-color:  #303841;
-    text-shadow: 5px #171717 ;
-    background-image: url(https://resi.ze-robot.com/dl/ga/gas-station-2-1920%C3%971080.jpg);
-    background-repeat: no-repeat;
-    background-size: cover;
-    line-height: 15px;
+    box-sizing: border-box;
+    background-color: var(--cor--primaria);
+    color:var(--cor--secundaria);
+    transition:  0.5 ease;
+                               
+}
+.destaque-titulo{
+    color: var(--cor--terciaria);
+}
+.cabecalho{
+    padding: 2% 0% 2% 8%;
+    background-color: var(--cor--terciaria);
+    
     
 }
-.container{
-    background-color: hsla(252, 15%, 87%, 0.432);
-    margin: auto;
-    border-radius: 15px;
-    border-style: solid;
-    border-color: #594082;
-    box-shadow: 5px 5px 10px black;
-    backdrop-filter: blur(10px);
-    width: fit-content;   
-    margin-top: 250px;
-    padding: 15px;
-       
+.cabecalho__menu{
+    display: flex;
+    gap: 80px;
+    
+    
 }
-.fotoperfil{
-     
-    border-radius: 460px;
-    scale: fill;
-    offset: 0px 4px;
-    max-height: 130px;
-    box-shadow: 0px 0px 15px #594082;
-    backdrop-filter: blur(10px);
-    margin: 15px;
-       
+.cabecalho__menu__link{
+    font-family: var(--fonte--principal);
+    font-size: 1.3rem;
+    font-weight: 600;
+    text-decoration: none;
+    color: var(--cor--texto);
+    
+    
 }
-.perfil{
+.apresentacao{
+    padding: 9%;
     display: flex;
     align-items: center;
-    flex-direction: row;  
+    justify-content: space-between;
+    gap: 82px;
 }
-.socialmedia{
-    max-height: 35px;
-    margin-right: 5px  ;
-    -webkit-transition: all 0.7s ease;
-    transition: all 0.7s ease;
+.apresentacao__conteudo{
+     width: 50%;
     
-   }
- 
- 
- .container h2{
-     font-weight: lighter;
-     font-size: 30px;
+}
+.apresentacao__conteudo__titulo{
+    font-size: 2.25rem;
+    font-family:var(--fonte--principal);
+}
+.apresentacao__conteudo__texto{
+    font-size: 1.5rem;
+    font-family: var(--fonte--principal);
+}
+.apresentacao__links{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: space-between;
+    gap: 32px;
+    
+}
 
- }
-  .github:hover{
-    -webkit-transform: scale(1.1);
-    transform: scale(1.2);
+
+.apresentacao__links__subtitulo{
+    font-family: var(--fonte--principal);
+    font-size: 1.5rem;
+    font-weight: 550;
+}
+.apresentacao__links__navegacao{
+    display: flex;
+    justify-content: center;
+    gap: 16px;
+    text-align: center;
+    border: 2px solid #F6F6F6;
+    border-color: #F6F6F6;
+    color: #f6f6f6;
+    width: 50%;
+    border-radius: 16px;
+    font-size: 1.5rem;
+    padding: 15px 0;
+    text-decoration: none;
+    font-family: var(--fonte--principal);
     
 }
- .socialmedia:hover{
-    -webkit-transform: scale(1.1);
-    transform: scale(1.2);
+.apresentacao__links__redes{
+    max-width: 2rem;
+    
+    
+}
+
+.apresentacao__links__link:hover{
+    background-color:var(--cor--hover) ;}
+
+
+.foto-perfil{
+    width: 35%;
+    border-radius: 18px;
+}
+.rodape{
+    color: var(--cor--texto);
+    background-color: var(--cor--terciaria);
+    padding: 23px;
+    text-align: left;
+    font-family: var(--fonte--principal);
+    font-size: 0.8rem;
+    
+    
+
+}
+@media (max-width:1200px){
+    
+    .cabecalho{
+        padding: 2%;
     }
-    .container h1{
-        font-family: "Product Sans";
-        font-size: 45px;
+
+    .cabecalho__menu{
+        justify-content: center;
     }
-    .linguas{
-        max-height: 35px;
-        margin: auto;
-        width: fit-content;
-        padding: 5px;          
+     .apresentacao{
+        flex-direction: column-reverse;
+        padding: 5%;
+    }  
+    .apresentacao__conteudo{
+        width: auto;
     }
-    .linguascon{
-    margin: auto;
-    border-radius: 7px; 
-    backdrop-filter: blur(10px);
-    background-color: #1717174b;
-    width: fit-content;   
-    }
-    .linguasicons{
-        display: flex;
-        align-items: center;
-    }
+    
+
+
+
+
+}
