@@ -1,4 +1,4 @@
-@import url('https://fonts.cdnfonts.com/css/product-sans');
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;600;700&display=swap');
 
 :root{
     --cor--primaria: #191919;
@@ -6,7 +6,7 @@
     --cor--terciaria:#6A36CF;
     --cor--hover:#393939;
     --cor--texto:#000000;
-    --fonte--principal:'Product Sans', sans-serif;
+    --fonte--principal:'Open Sans', sans-serif;
 }
 *{
     margin: 0;
@@ -16,7 +16,6 @@ body{
     box-sizing: border-box;
     background-color: var(--cor--primaria);
     color:var(--cor--secundaria);
-    transition:  0.5 ease;
                                
 }
 .destaque-titulo{
@@ -114,9 +113,18 @@ body{
     text-align: left;
     font-family: var(--fonte--principal);
     font-size: 0.8rem;
+    display: flex;
+    justify-content: space-between;
     
     
 
+}
+.rodape__insta{
+    text-decoration: none;
+    color: var(--cor--fonte);
+}
+.rodape__insta:hover{
+    text-decoration-line: underline;
 }
 @media (max-width:1200px){
     
@@ -128,7 +136,7 @@ body{
         justify-content: center;
     }
      .apresentacao{
-        flex-direction: column-reverse;
+        direction: column-reverse;
         padding: 5%;
     }  
     .apresentacao__conteudo{
