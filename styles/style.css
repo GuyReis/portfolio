@@ -22,14 +22,14 @@ body{
     color: var(--cor--terciaria);
 }
 .cabecalho{
-    padding: 2% 0% 2% 8%;
+    padding: 1.5rem;
     background-color: var(--cor--terciaria);
     
     
 }
 .cabecalho__menu{
     display: flex;
-    gap: 80px;
+    gap: 2rem;
     
     
 }
@@ -47,7 +47,7 @@ body{
     display: flex;
     align-items: center;
     justify-content: space-between;
-    gap: 82px;
+    gap: 0;
 }
 .apresentacao__conteudo{
      width: 50%;
@@ -66,7 +66,7 @@ body{
     align-items: center;
     flex-direction: column;
     justify-content: space-between;
-    gap: 32px;
+    gap: 0.6rem;
     
 }
 
@@ -75,25 +75,27 @@ body{
     font-family: var(--fonte--principal);
     font-size: 1.5rem;
     font-weight: 550;
+    padding: 0.6rem ;
+}
+.apresentacao__links__algo{
+    display: flex;
+    flex-direction: row;
+    gap: 3em;
 }
 .apresentacao__links__navegacao{
     display: flex;
     justify-content: center;
-    gap: 16px;
     text-align: center;
-    border: 2px solid #F6F6F6;
-    border-color: #F6F6F6;
     color: #f6f6f6;
     width: 50%;
-    border-radius: 16px;
     font-size: 1.5rem;
-    padding: 15px 0;
     text-decoration: none;
     font-family: var(--fonte--principal);
     
 }
 .apresentacao__links__redes{
-    max-width: 2rem;
+
+    width: 3rem;
     
     
 }
@@ -103,8 +105,8 @@ body{
 
 
 .foto-perfil{
-    width: 35%;
-    border-radius: 18px;
+    width: 20rem;
+    border-radius: 1em;
 }
 .rodape{
     color: var(--cor--texto);
